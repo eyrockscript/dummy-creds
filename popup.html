@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Credentials</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ DUMMY_CREDS</h1>
+        </header>
+        
+        <div class="credential-section">
+            <div class="field-group">
+                <label>USER</label>
+                <div class="input-group">
+                    <input type="text" id="username" readonly>
+                    <button class="copy-btn" data-target="username">⧉</button>
+                </div>
+            </div>
+            
+            <div class="field-group">
+                <label>EMAIL</label>
+                <div class="input-group">
+                    <input type="text" id="email" readonly>
+                    <button class="copy-btn" data-target="email">⧉</button>
+                </div>
+            </div>
+            
+            <div class="field-group">
+                <label>PASS</label>
+                <div class="input-group">
+                    <input type="text" id="password" readonly>
+                    <button class="copy-btn" data-target="password">⧉</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="generate-btn" class="primary-btn">GENERATE</button>
+            <button id="copy-all-btn" class="secondary-btn">COPY ALL</button>
+        </div>
+        
+        <div class="password-options">
+            <div class="option-header">
+                <span>PWD_CONFIG</span>
+                <span class="length-display">LEN: <span id="length-value">12</span></span>
+            </div>
+            <div class="checkbox-grid">
+                <label class="checkbox-item">
+                    <input type="checkbox" id="include-uppercase" checked>
+                    <span>A-Z</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" id="include-lowercase" checked>
+                    <span>a-z</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" id="include-numbers" checked>
+                    <span>0-9</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" id="include-symbols" checked>
+                    <span>!@#</span>
+                </label>
+            </div>
+            <input type="range" id="password-length" min="8" max="32" value="12" class="range-slider">
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

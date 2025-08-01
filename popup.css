@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 300px;
+    height: 400px;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    background: #0a0a0a;
+    color: #00ff41;
+    overflow: hidden;
+}
+
+.container {
+    padding: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #00ff41;
+    padding-bottom: 8px;
+}
+
+header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #00ff41;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #00ff41;
+}
+
+.credential-section {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.field-group {
+    margin-bottom: 8px;
+}
+
+.field-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+    color: #00ff41;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group {
+    display: flex;
+    gap: 6px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 12px;
+    background: #1a1a1a;
+    color: #fff;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00ff41;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+.copy-btn {
+    padding: 6px 8px;
+    background: #222;
+    color: #00ff41;
+    border: 1px solid #333;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    min-width: 28px;
+    font-family: inherit;
+}
+
+.copy-btn:hover {
+    background: #333;
+    border-color: #00ff41;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.2);
+}
+
+.copy-btn:active {
+    background: #00ff41;
+    color: #000;
+}
+
+.controls {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.primary-btn {
+    flex: 1;
+    padding: 8px 12px;
+    background: #222;
+    color: #00ff41;
+    border: 1px solid #00ff41;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+}
+
+.primary-btn:hover {
+    background: #00ff41;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.secondary-btn {
+    flex: 1;
+    padding: 8px 12px;
+    background: #1a1a1a;
+    color: #888;
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+}
+
+.secondary-btn:hover {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.password-options {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #00ff41;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.length-display {
+    color: #888;
+}
+
+#length-value {
+    color: #00ff41;
+    font-weight: 700;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 10px;
+    color: #888;
+    padding: 2px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    accent-color: #00ff41;
+}
+
+.checkbox-item:hover {
+    color: #fff;
+}
+
+.range-slider {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #333;
+    outline: none;
+    -webkit-appearance: none;
+    margin-top: 4px;
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: #00ff41;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.range-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: #00ff41;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.copy-feedback {
+    animation: matrix-glow 0.3s ease;
+}
+
+@keyframes matrix-glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 255, 65, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+    }
+}
