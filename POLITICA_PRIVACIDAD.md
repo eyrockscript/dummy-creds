@@ -22,7 +22,8 @@ Dummy Credentials ("nosotros," "nuestra," o "la extensión") es una extensión p
 ## Permisos
 
 La extensión solicita permisos mínimos:
-- **Pestaña Activa**: Se usa únicamente para mostrar la ventana emergente de la extensión cuando se hace clic. No accedemos ni modificamos el contenido de las páginas web.
+- **Pestaña Activa (activeTab)**: Se usa únicamente para mostrar la ventana emergente de la extensión cuando se hace clic. No accedemos ni modificamos el contenido de las páginas web.
+- **Pestañas (tabs)**: Permite el acceso básico a la información de las pestañas del navegador para el funcionamiento adecuado de la extensión. No se accede al contenido de las páginas web ni se modifica.
 
 ## Seguridad de Datos
 

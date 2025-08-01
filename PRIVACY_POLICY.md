@@ -22,7 +22,8 @@ Dummy Credentials ("we," "our," or "the extension") is a Chrome browser extensio
 ## Permissions
 
 The extension requests minimal permissions:
-- **Active Tab**: Used only to display the extension popup when clicked. We do not access or modify webpage content.
+- **Active Tab (activeTab)**: Used only to display the extension popup when clicked. We do not access or modify webpage content.
+- **Tabs (tabs)**: Allows basic access to browser tab information for proper extension functionality. No webpage content is accessed or modified.
 
 ## Data Security
 
