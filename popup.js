@@ -53,6 +53,10 @@ class DummyCredentialsGenerator {
                 this.generatePassword();
             });
         });
+        
+        document.getElementById('coffee-btn').addEventListener('click', () => {
+            this.openCoffeeLink();
+        });
     }
     
     generateCredentials() {
@@ -192,6 +196,12 @@ class DummyCredentialsGenerator {
                 element.style.backgroundColor = '';
             }
         }, 1000);
+    }
+    
+    openCoffeeLink() {
+        chrome.tabs.create({
+            url: 'https://buy.stripe.com/cNi00igBN2Ki881b756EU00'
+        });
     }
 }
 

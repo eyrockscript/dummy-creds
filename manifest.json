@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Generate dummy usernames, emails, and strong passwords for testing purposes",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
   "action": {
     "default_popup": "popup.html",
